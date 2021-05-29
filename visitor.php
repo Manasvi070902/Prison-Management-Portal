@@ -10,11 +10,15 @@ if(isset($_SESSION['userUidOfficer'])){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
       sql database connection error!!       
       </h2>';
+    }elseif($_GET['error']=="reserror"){
+      echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+      This visit cannot be scheduled!!       
+      </h2>';
     }
 }
 
 echo'
-<form action="includes/visitor.inc.php" method="post">
+<form action="includes/visitor.inc.php" method="POST">
   <div class="flex flex-col h-screen">
     <section class="text-gray-700 body-font relative flex-grow">
       <div class="container px-5 my-5 mx-auto">
@@ -69,7 +73,7 @@ echo'
                 <input
                   name="date_visit"
                   class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-                    type="date"
+                  type="date"
                 />
               </div>
             </div>
@@ -81,7 +85,6 @@ echo'
                 <select
                   name="time_slot"
                   class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-                    type="date"
                 >
                   <option value="10AM-11AM">10AM-11AM</option>
                   <option value="12PM-1PM">12PM-1PM</option>
@@ -103,12 +106,12 @@ echo'
             </div>
           </div>
             <div class="p-5 w-full">
-              <button
-              name="visitor_add" type="submit"
+              <input
+                name="visitor_add"
+                type="submit"
                 class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                value="Submit"
               >
-                Submit
-              </button>
             </div>
           </div>
         </div>
