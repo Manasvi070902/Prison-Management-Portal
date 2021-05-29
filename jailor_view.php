@@ -40,12 +40,7 @@
 
   
             while($row=mysqli_fetch_assoc($result)){?>
-                <?php //$row2=mysqli_fetch_assoc($result2);
-               // print_r($row2);
-        //print_r($row);
-                  
-                  ?>
-            
+               
               <tr>
                 <td class="border px-4 py-2"><?php echo "JAI".$row['Jailor_id']."<br>";?></td>
                 <td class="border px-4 py-2"><?php echo$row['First_name']."<br>";?></td>

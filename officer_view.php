@@ -9,19 +9,14 @@
         exit();
     }
 
-    //require 'header.php';
-    //if(isset($_SESSION['userUidOfficer'])){
+
     $sql="SELECT O.Officer_id,O.First_name,O.Last_name,O.Title,O.Date_of_birth,OP.Officer_phone FROM 
     Officer as O INNER JOIN  Officer_phone as OP ON O.Officer_id=OP.Officer_id;";
     $result=mysqli_query($conn,$sql);
     $resultCheck=mysqli_num_rows($result);
-/*
-    $sql2="SELECT * FROM officer_phone;";
-    $result2=mysqli_query($conn,$sql);
-    $resultCheck2=mysqli_num_rows($result2);
-*/
+
     if($resultCheck  > 0){?>
-  <style>.foot{padding-top:55px;}</style>
+  <style>.foot{padding-top:8gi5px;}</style>
 
   <section class="text-gray-700 body-font relative">
   <h1 class="text-3xl text-center">
