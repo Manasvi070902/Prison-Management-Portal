@@ -40,21 +40,25 @@
                 $res=mysqli_fetch_row($result);
                 
                 //inserting IPC and prisoner id into  Commits table:
-              
-              $sql3="INSERT INTO Commits(IPC,Prisoner_id) VALUES
-                (?,?) ";
-                $stmt3=mysqli_stmt_init($conn);
-                if(!mysqli_stmt_prepare($stmt3,$sql3)){
-                    header("Location: ../crime.php?error=sqlerror");
-                    exit();
-                }else{
-                    
-                    mysqli_stmt_bind_param($stmt3,"ii",$IPC,$res[0]);
-                    mysqli_stmt_execute($stmt3);
-                    header("Location: ../successcrime_prisoner.php?insert=success");
-                    exit();
-
+                if(isset($_POST["IPC"])) 
+                {
+                    // Retrieving each selected option
+                    foreach ($_POST['IPC'] as $IPC) {
+                        $sql3="INSERT INTO Commits(IPC,Prisoner_id) VALUES (?,?)";
+                        $stmt3=mysqli_stmt_init($conn);
+                        if(!mysqli_stmt_prepare($stmt3,$sql3)){
+                            header("Location: ../crime.php?error=sqlerror");
+                            exit();
+                        }
+                        else{    
+                            mysqli_stmt_bind_param($stmt3,"ii",$IPC,$res[0]);
+                            mysqli_stmt_execute($stmt3);
+                            header("Location: ../successcrime_prisoner.php?insert=success");
+                        }
+                    }
                 }
+
+                
                            
 
 

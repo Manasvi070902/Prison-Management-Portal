@@ -38,7 +38,7 @@ require "./header.php";
           <div class="mt-1 relative rounded-md shadow-sm">
             <select
               class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="IPC" name="IPC" >
+              placeholder="IPC" name="IPC[]" multiple >
             <option  value="1">1</option>
             <option   value="300">300</option>
           
