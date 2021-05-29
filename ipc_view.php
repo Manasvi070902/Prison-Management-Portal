@@ -10,35 +10,27 @@
     }
 
     //require 'header.php';
-    //if(isset($_SESSION['userUidOfficer'])){
-    $sql="SELECT F.IPC,F.Description, A.Prisoner_id FROM Crime as F INNER JOIN Commits as A ON F.IPC=A.IPC ;";
-    // $sql = "SELECT F.IPC,F.Description,F.Case_Type, A.Prisoner_id FROM Crime as F INNER JOIN Commits as A ON F.IPC=A.IPC INNER JOIN Prisoner as P ON A.Prisoner_id=P.Prisoner_id"
+  
+    $sql="SELECT * FROM Crime";
     $result=mysqli_query($conn,$sql);
     $resultCheck=mysqli_num_rows($result);
-    if($resultCheck > 0){?>
+
+    if($resultCheck  > 0){?>
   <style>.foot{padding-top:55px;}</style>
 
   <section class="text-gray-700 body-font relative">
   <h1 class="text-3xl text-center">
-            Prisoner Crime Details
+            List of all important IPC Sections
         </h1> 
-    
     <div class="container text-center px-5 my-5 mx-auto">
         <div class="flex items-center justify-center bg-gray-50 pt-12 pb-56 px-4 sm:px-6 lg:px-8">
        
         <table class="table-fixed">
             <thead>
               <tr>
-                <th class="w-1/6 px-6 py-2">IPC</th>
+                <th class="w-1/2 px-7 py-2">IPC</th>
+                <th class="w-1/2 px-7 py-2">Description</th>
                 
-                <th class="w-1/6 px-6 py-2">Description</th>
-                
-
-               
-
-           
-                <th class="w-1/6 px-6 py-2">Prisoner ID</th>
-
 
               </tr>
             </thead>
@@ -48,11 +40,8 @@
             
             
               <tr>
-                <td class="border px-4 py-2"><?php echo$row['IPC']."<br>";?></td>           
+                <td class="border px-4 py-2"><?php echo"Section ".$row['IPC']."<br>";?></td>
                 <td class="border px-4 py-2"><?php echo$row['Description']."<br>";?></td>
-                <td class="border px-4 py-2"><?php echo"PRI".$row['Prisoner_id']."<br>";?></td>
-               
-
               </tr>
              
        

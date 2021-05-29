@@ -2,8 +2,6 @@
     if(isset($_POST['crime_prisoner_add'])){
         require 'dbh.inc.php';
         $IPC=$_POST['IPC'];
-        $crime_done=$_POST['crime_done'];
-        $description=$_POST['description'];
         $f_name=$_POST['f_name'];
         $l_name=$_POST['l_name'];
         $date_in=$_POST['date_in'];
@@ -14,25 +12,13 @@
         $section_id=$_POST['section_id'];
         $status_inout='in';
 
-        if(empty($IPC)||empty($crime_done)||empty($description)||empty($f_name)||empty($l_name)||empty($date_in)||empty($date_out)||empty($dob)||empty($height)||empty($addr)||empty($section_id)){
+        if(empty($IPC)||empty($f_name)||empty($l_name)||empty($date_in)||empty($date_out)||empty($dob)||empty($height)||empty($addr)||empty($section_id)){
               
             
             header("Location: ../crime.php?error=emptyfields");
             exit();
         }else{
-                $sql1="INSERT INTO Crime(IPC,Description,Case_type) VALUES (?,?,?) ";
-                $stmt1=mysqli_stmt_init($conn);
-                if(!mysqli_stmt_prepare($stmt1,$sql1)){
-                    header("Location: ../crime.php?error=sqlerror");
-                    exit();
-                }else{
-                    
-                    mysqli_stmt_bind_param($stmt1,"sss",$IPC,$description,$crime_done);
-                    mysqli_stmt_execute($stmt1);
-                   
-                    //exit();
-
-                }
+                
                 $sql2="INSERT INTO Prisoner(First_name,Last_name,Date_in,Dob,Height,Date_out,Address,Section_id,Status_inout) VALUES
                 (?,?,?,?,?,?,?,?,?) ";
                 $stmt2=mysqli_stmt_init($conn);

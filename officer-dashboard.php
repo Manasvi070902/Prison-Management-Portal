@@ -34,7 +34,7 @@
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
             </div>
             <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Add a visitor</h2>
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Add a Visitor</h2>
               <p class="leading-relaxed text-base">Add a visitor .</p>
               <a class="mt-3 text-indigo-500 inline-flex items-center"href="./visitor.php">Add Visitor
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -58,20 +58,7 @@
             </a>
           </div>
         </div>
-          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Update FIR</h2>
-              <p class="leading-relaxed text-base">Update previously written FIRs. Also use this to add/(remove) prisoners from a case.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center" href="./fir_update.php">Update FIR
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+          
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
           <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
@@ -138,23 +125,7 @@
             
           </div>
   
-          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View FIRs against prsioner id</h2>
-              <p class="leading-relaxed text-base">View all the FIRs filed against all the prisoners</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center" href="./fir_against_view.php">View FIRs 
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            
-          </div>
+        
   
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
             <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
@@ -163,9 +134,9 @@
               </svg>
             </div>
             <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View all FIRs </h2>
-              <p class="leading-relaxed text-base">View all the FIRs filed against all the prisoners</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center" href="./crime_view.php">View FIRs 
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Crime Details </h2>
+              <p class="leading-relaxed text-base">View all the Crime details of prisoners</p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center" href="./crime_view.php">View Details
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -181,7 +152,7 @@
             </div>
             <div class="flex-grow pl-6">
               <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View Jailor</h2>
-              <p class="leading-relaxed text-base">View all the Jailors  </p>
+              <p class="leading-relaxed text-base">View all the unassigned Jailors  </p>
               <a class="mt-3 text-indigo-500 inline-flex items-center" href="./jailor_view.php">View Jailors 
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -226,7 +197,23 @@
         
       </div>
   
-          
+      <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+      <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+      <div class="flex-grow pl-6">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">View IPC</h2>
+        <p class="leading-relaxed text-base">View all the important IPC with their descriptions</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center" href="./ipc_view.php">View IPC
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      
+    </div>
     
         </div>
       </div>

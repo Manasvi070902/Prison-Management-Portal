@@ -36,42 +36,20 @@ require "./header.php";
             >IPC</label
           >
           <div class="mt-1 relative rounded-md shadow-sm">
-            <input
-              class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="IPC" name="IPC"
-            />
-          </div>
-        </div>
-         
-          <div class="p-2 w-1/2">
-          <label class="block text-sm leading-5 font-medium text-gray-700"
-            >Crime</label
-          >
-          <div class="mt-1 relative rounded-md shadow-sm">
             <select
               class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="Jobs" name="crime_done"
-            >
-            <option  value="Murder">Murder</option>
-              <option   value="Rape">Rape</option>
-              <option  value="Theft">Theft</option>
-              <option  value="Fraud">Fraud</option>
-</select>
+              placeholder="IPC" name="IPC" >
+            <option  value="1">1</option>
+            <option   value="300">300</option>
+          
+           </select>
           </div>
         </div>
          
-          <div class="p-2 w-full">
-          <label class="block text-sm leading-5 font-medium text-gray-700"
-            >Description</label
-          >
-          <div class="mt-1 relative rounded-md shadow-sm">
-            <textarea
-              class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block"
-              placeholder="Description" name="description"
-            ></textarea>
-          </div>
-        </div>
-
+          
+  
+         
+        
         </div>
       </div>
     </div>

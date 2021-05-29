@@ -1,24 +1,25 @@
 <?php
     require 'header.php';
-    if(isset($_SESSION['userUidOfficer']) ||isset($_SESSION['userUidJailor'])){
+    if(isset($_SESSION['userUidOfficer'])){
 
     include_once 'includes/dbh.inc.php';
+    //require'header.php';
     }else{
         header("Location: ./failure.php");
         exit();
     }
 
-    $sql="SELECT * FROM Deleted_Jailors as J INNER JOIN Jailor_phone as JP ON J.Jailor_id=JP.Jailor_id ;";
+    //require 'header.php';
+    //if(isset($_SESSION['userUidOfficer'])){
+    $sql="SELECT * FROM Visitor;";
     $result=mysqli_query($conn,$sql);
     $resultCheck=mysqli_num_rows($result);
-
-
-    if(($resultCheck ) > 0){?>
+    if($resultCheck > 0){?>
   <style>.foot{padding-top:55px;}</style>
 
   <section class="text-gray-700 body-font relative">
   <h1 class="text-3xl text-center">
-            Jailors removed
+            Visitors visited 
         </h1> 
     <div class="container text-center px-5 my-5 mx-auto">
         <div class="flex items-center justify-center bg-gray-50 pt-12 pb-56 px-4 sm:px-6 lg:px-8">
@@ -26,31 +27,26 @@
         <table class="table-fixed">
             <thead>
               <tr>
-                <th class="w-1/4 px-5 py-2">Jailor ID</th>
+                <th class="w-1/4 px-5 py-2">Visitor ID</th>
                 <th class="w-1/4 px-5 py-2">First Name</th>
                 <th class="w-1/4 px-5 py-2">Last Name</th>
-                <th class="w-1/4 px-4 py-2">Mobile Number</th>
-
+                <th class="w-1/4 px-5 py-2">Visit Date</th>
+                <th class="w-1/4 px-4 py-2">Prisoner ID</th>
 
               </tr>
             </thead>
             <tbody>
         <?php
-        
-
-  
-            while($row=mysqli_fetch_assoc($result)){?>
-                <?php //$row2=mysqli_fetch_assoc($result2);
-               // print_r($row2);
-        //print_r($row);
-                  
-                  ?>
+         while($row=mysqli_fetch_assoc($result)){ ?>
+            
             
               <tr>
-                <td class="border px-4 py-2"><?php echo "JAI".$row['Jailor_id']."<br>";?></td>
+                <td class="border px-4 py-2"><?php echo$row['Visitor_id']."<br>";?></td>
                 <td class="border px-4 py-2"><?php echo$row['First_name']."<br>";?></td>
                 <td class="border px-4 py-2"><?php echo$row['Last_name']."<br>";?></td>
-                <td class="border px-4 py-2"><?php echo$row['Jailor_phone']."<br>";?></td>
+                <td class="border px-4 py-2"><?php echo$row['Visit_date']."<br>";?></td>
+                <td class="border px-4 py-2"><?php echo"PRI".$row['Prisoner_id']."<br>";?></td>
+
               </tr>
              
        
@@ -76,4 +72,4 @@
 <footer class="foot">
 <?php
  require'footer.php';?>
-</footer>
+</foooter>

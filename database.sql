@@ -57,7 +57,6 @@ CREATE TABLE Section (
 CREATE TABLE Crime(
 	IPC int(11) PRIMARY KEY not null,
     Description longtext,
-    Case_type varchar(25)
 );
 CREATE TABLE Commits (
 	IPC int(11) NOT NULL,
