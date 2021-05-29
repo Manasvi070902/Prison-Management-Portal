@@ -1,4 +1,4 @@
-<footer class="text-gray-700 body-font" style=" position: fixed; left: 0; bottom: 0;width: 100%; text-align: center;">
+<footer class="text-gray-700 body-font" style=" left: 0; bottom: 0;width: 100%; text-align: center;">
     <div class="bg-gray-200">
       <div
         class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
