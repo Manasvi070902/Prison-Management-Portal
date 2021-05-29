@@ -12,7 +12,7 @@ if(isset($_SESSION['userUidJailor'])){
       </h2>';
     }elseif($_GET['error']=="success"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-green-600">
-      Prisoners Section has been updated successfully!!       
+      Prisoner Section has been updated successfully!!       
       </h2>';
     }
   }
@@ -26,7 +26,7 @@ echo'
         <h1
           class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
         >
-        Jailor Update
+        Prisoner Section Update
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
           The Jailor can update information related to The Prisoner and their Sections

@@ -12,14 +12,18 @@ if(isset($_SESSION['userUidOfficer'])){
       </h2>';
     }elseif($_GET['error']=="success"){
       echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-green-600">
-      Jailor Details Updated successfully!!       
+     IPC Added Sucessfully!!       
       </h2>';
-    }
+    }elseif($_GET['error']=="reserror"){
+        echo'<h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-red-600">
+       Not Valid!!       
+        </h2>';
+      }
   }
 
 echo'
   <div class="flex flex-col h-screen">
-  <form action="includes/jailor_update.inc.php" method="post">
+  <form action="includes/ipc_update.inc.php" method="POST">
 
   <section class="text-gray-700 body-font relative flex-grow">
     <div class="container px-5 my-5 mx-auto">
@@ -27,10 +31,10 @@ echo'
         <h1
           class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
         >
-        Update the Section Id and Section Name of the Jailor
+        Add IPC Code to Prisoner
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Enter the Jailor Id and Section Id
+          Enter the Prisoner ID and IPC
         </p>
       </div>
       <div class="lg:w-1/2 md:w-2/3 mx-auto">
@@ -38,14 +42,15 @@ echo'
           <div class="p-2 w-1/2">
           
             <label class="block text-sm leading-5 font-medium text-gray-700"
-              >Jailor ID</label
+              >IPC</label
             >
             <div class="mt-1 relative rounded-md shadow-sm >
             placeholder="Jobs">
             <input
-              name="jailor_id"
+            required
+              name="IPC"
               class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="Jailor ID"
+              placeholder="IPC"
             />
               
             </div>
@@ -56,37 +61,24 @@ echo'
           <label
             for="price"
             class="block text-sm leading-5 font-medium text-gray-700"
-            >New Section ID</label
+            >Prisoner ID</label
           >
           <div class="mt-1 relative rounded-md shadow-sm">
             <input
-            name="section_id"
+            required
+            name="Prisoner_id"
               class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="New Section ID"
+              placeholder="Prisoner ID"
             />
           </div>
         </div>
-        <div class="p-2 w-1/2 align-center">
-          <label
-            for="price"
-            class="block text-sm leading-5 font-medium text-gray-700"
-            >New Section Name</label
-          >
-          <div class="mt-1 relative rounded-md shadow-sm">
-            <input
-            name="section_name"
-              class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base form-input block w-full px-3 h-10"
-              placeholder="New Section ID"
-            />
-          </div>
-        </div>
+       
               
-            </div>
-          </div>
+           
           
           <div class="p-5 w-full">
             <button
-            name="update_jailor" type="submit"
+            name="update_ipc" type="submit"
               class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
               Submit

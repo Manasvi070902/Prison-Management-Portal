@@ -31,23 +31,7 @@
 </form>
   
 <?php
-   // $sece_id=(int)$sec_id;
-    //require 'header.php';
-    //if(isset($_SESSION['userUidOfficer'])){
-    /*
-      $sql="SELECT * FROM prisoner WHERE Section_id =?";
-    $stmt=mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-      header("Location: ../prisoner_view.php?error=sqlerror");
-      exit();
-    }else{
-    mysqli_stmt_bind_param($stmt,"i",$sec_id);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_store_result($stmt);
-    */
-    // print_r($stmt);
-   // $result=mysqli_query($conn,$sql);
-     // $sece_id=(int) $sec_id;
+  
    $sql="SELECT * FROM Prisoner WHERE Section_id='$sec_id'";
    $result=mysqli_query($conn,$sql);
 
@@ -65,16 +49,16 @@
         <table class="table-fixed">
             <thead>
               <tr>
-                <th class="w-1/4 px-4 py-2">Prisoner ID</th>
-                <th class="w-1/4 px-5 py-2">First Name</th>
-                <th class="w-1/4 px-5 py-2">Last Name</th>
-                <th class="w-1/4 px-5 py-2">Date In</th>
-                <th class="w-1/4 px-5 py-2">DOB</th>
-                <th class="w-1/4 px-5 py-2">Height</th>
-                <th class="w-1/4 px-5 py-2">Date Out</th>
-                <th class="w-1/4 px-5 py-2">Address</th>
-                <th class="w-1/4 px-5 py-2">Section ID</th>
-                <th class="w-1/4 px-5 py-2">Status_inout</th>
+                <th class="w-1/8 px-8 py-2">Prisoner ID</th>
+                <th class="w-1/8 px-8 py-2">First Name</th>
+                <th class="w-1/8 px-8 py-2">Last Name</th>
+                <th class="w-1/8 px-8 py-2">Date In</th>
+                <th class="w-1/8 px-8 py-2">DOB</th>
+                <th class="w-1/8 px-8 py-2">Height</th>
+                <th class="w-1/8 px-8 py-2">Date Out</th>
+                <th class="w-1/8 px-8 py-2">Address</th>
+                <th class="w-1/8 px-8 py-2">Section ID</th>
+                <th class="w-1/8 px-8 py-2">Status_inout</th>
 
 
               </tr>

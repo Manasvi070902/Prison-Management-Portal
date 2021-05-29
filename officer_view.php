@@ -23,17 +23,17 @@
             Officers present
         </h1> 
     <div class="container text-center px-5 my-5 mx-auto">
-        <div class="flex items-center justify-center bg-gray-50 pt-12 pb-56 px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-center bg-gray-50 pt-12 pb-56 px-3 sm:px-6 lg:px-8">
        
         <table class="table-fixed">
             <thead>
               <tr>
-                <th class="w-1/6 px-7 py-2">Officer ID</th>
-                <th class="w-1/6 px-7 py-2">First Name</th>
-                <th class="w-1/6 px-7 py-2">Last Name</th>
-                <th class="w-1/6 px-7 py-2">Title</th>
-                <th class="w-1/6 px-7 py-2">Date Of Birth</th>
-                <th class="w-1/6 px-7 py-2">Mobile Number</th>
+                <th class="w-1/8 px-7 py-2">Officer ID</th>
+                <th class="w-1/8 px-7 py-2">First Name</th>
+                <th class="w-1/8 px-7 py-2">Last Name</th>
+                <th class="w-1/8 px-7 py-2">Title</th>
+                <th class="w-1/8 px-7 py-2">Date Of Birth</th>
+                <th class="w-1/8 px-7 py-2">Mobile Number</th>
 
 
               </tr>

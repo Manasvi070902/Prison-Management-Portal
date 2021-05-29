@@ -4,7 +4,7 @@
 
     if(isset($_SESSION['userUidOfficer'])){
       echo'<section class="text-gray-700 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-14 mx-auto">
         <div class="font-medium title-font text-center text-gray-900 mb-20">
         <h1 class="text-3xl">
             Officer Dashboard
@@ -73,20 +73,8 @@
             </a>
           </div>
         </div>
-        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-        </div>
-        <div class="flex-grow pl-6">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Update Jailor</h2>
-          <p class="leading-relaxed text-base">Update information of Prisoner date_out</p>
-          <a class="mt-3 text-indigo-500 inline-flex items-center " href="./jailor_update.php">Update Information
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
+      
+  
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
             <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
@@ -257,6 +245,40 @@
     }
 ?>
 
-<?php
-    require "./footer.php"
-?>
+<footer class="text-gray-700 body-font" style=" left: 0; bottom: 0;width: 100%; text-align: center;">
+    <div class="bg-gray-200">
+      <div
+        class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+      >
+      <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">Prison Management System</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+          © 2021 — Ankita , Grihit, Manasvi, Piyush, Vaibhav
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-500"> Made with ❤️ </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+</body>

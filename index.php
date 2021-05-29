@@ -3,21 +3,21 @@ require "./header.php";
 ?>
 
 <style>
-  body{
-    background : url("assets/bg.jpg");
-    min-height:100vh;
-    min-width:100vw;
-    background-position: "center";
-    background-size:"contain"
-  }
+  /* .container{
+    background-image : url("assets/bg.jpg");
+    height:100vh;
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  } */
 </style>
-<div class="container">
- 
-    <div class="align-center" >
-        <!-- <img src="assets/bg.jpg"  style="width: 50%; max-width: 100%;"> -->
 
-    </div>
-  </div>
+<div class="container">
+        <img src="assets/bg.jpg"  style="width: 100vw; height: 62.5vw; position : fixed;" />
+
+</div>
+
 
 <?php 
 require "./footer.php"

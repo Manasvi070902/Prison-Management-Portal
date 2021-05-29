@@ -9,8 +9,7 @@
         exit();
     }
 
-    //require 'header.php';
-    //if(isset($_SESSION['userUidOfficer'])){
+   
     $sql="SELECT * FROM Crime as F INNER JOIN Commits as A ON A.IPC=F.IPC INNER JOIN Prisoner as P on P.Prisoner_id = A.Prisoner_id ;";
 
   
