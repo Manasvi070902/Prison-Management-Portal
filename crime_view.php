@@ -11,8 +11,9 @@
 
     //require 'header.php';
     //if(isset($_SESSION['userUidOfficer'])){
-    $sql="SELECT F.IPC,F.Description, A.Prisoner_id FROM Crime as F INNER JOIN Commits as A ON F.IPC=A.IPC ;";
-    // $sql = "SELECT F.IPC,F.Description,F.Case_Type, A.Prisoner_id FROM Crime as F INNER JOIN Commits as A ON F.IPC=A.IPC INNER JOIN Prisoner as P ON A.Prisoner_id=P.Prisoner_id"
+    $sql="SELECT * FROM Crime as F INNER JOIN Commits as A ON A.IPC=F.IPC INNER JOIN Prisoner as P on P.Prisoner_id = A.Prisoner_id ;";
+
+  
     $result=mysqli_query($conn,$sql);
     $resultCheck=mysqli_num_rows($result);
     if($resultCheck > 0){?>
@@ -29,16 +30,17 @@
         <table class="table-fixed">
             <thead>
               <tr>
-                <th class="w-1/6 px-6 py-2">IPC</th>
+                <th class="w-1/5 px-5 py-2">IPC</th>
                 
-                <th class="w-1/6 px-6 py-2">Description</th>
+                <th class="w-1/5 px-5 py-2">Description</th>
                 
 
                
 
            
-                <th class="w-1/6 px-6 py-2">Prisoner ID</th>
-
+                <th class="w-1/5 px-5 py-2">Prisoner ID</th>
+                <th class="w-1/5 px-5 py-2">First Name</th>
+                <th class="w-1/5 px-5 py-2">Last Name</th>
 
               </tr>
             </thead>
@@ -51,8 +53,10 @@
                 <td class="border px-4 py-2"><?php echo$row['IPC']."<br>";?></td>           
                 <td class="border px-4 py-2"><?php echo$row['Description']."<br>";?></td>
                 <td class="border px-4 py-2"><?php echo"PRI".$row['Prisoner_id']."<br>";?></td>
+                <td class="border px-4 py-2"><?php echo$row['First_name']."<br>";?></td>
+                <td class="border px-4 py-2"><?php echo$row['Last_name']."<br>";?></td>
                
-
+  
               </tr>
              
        

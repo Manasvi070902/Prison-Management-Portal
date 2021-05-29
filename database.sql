@@ -1,3 +1,10 @@
+CREATE TABLE Admin(
+	Admin_id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    Admin_uname tinytext not null,
+    Admin_pwd longtext not null,
+    First_name varchar(25) not null,
+    Last_name varchar(25) not null
+);
 CREATE TABLE Jailor(
 	Jailor_id int(11) not null AUTO_INCREMENT PRIMARY KEY,
     Jailor_uname tinytext not null,
@@ -10,6 +17,7 @@ CREATE TABLE Jailor_phone(
 	Jailor_phone varchar(10) not null,
     Jailor_id int(11) not null
 );
+
 CREATE TABLE Deleted_jailors(
 	Jailor_id int(11) not null PRIMARY KEY,
     Jailor_uname tinytext not null,
