@@ -1,10 +1,7 @@
 <?php
     require "./header.php";
 ?>
-<!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
+
 <div class="flex items-center justify-center bg-gray-50 pt-12 pb-56 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full">
     <div>

@@ -31,12 +31,7 @@
               <tr>
                 <th class="w-1/5 px-5 py-2">IPC</th>
                 
-                <th class="w-1/5 px-5 py-2">Description</th>
-                
-
-               
-
-           
+                <th class="w-1/5 px-5 py-2">Description</th>     
                 <th class="w-1/5 px-5 py-2">Prisoner ID</th>
                 <th class="w-1/5 px-5 py-2">First Name</th>
                 <th class="w-1/5 px-5 py-2">Last Name</th>
