@@ -24,7 +24,7 @@ session_start();
                     <div  class=" header-logo  flex items-center sm:flex-row flex-col">
     
                    <h1 class="font-semibold text-black leading-relaxed">  
-                   <a href="index.php">PMS</a></h1>
+                   <a href="about.php">PMS</a></h1>
                         
                     </div>
 
